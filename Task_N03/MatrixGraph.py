@@ -49,7 +49,7 @@ class ListGraph:
 class OrientedWeightedMatrixGraph:
     def __init__(self, V) -> None:
         self.V = V
-        self.matrix = [[0]*self.V for i in range(V)]
+        self.matrix = [[float('inf')]*self.V for i in range(V)]
 
 
     def add_vert(self) -> None:
